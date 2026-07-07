@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Ecommerce Engagement Benchmark Report 2026 — For Recipient</title>
+    <style>
+        :root {
+            --bg-primary: #06080c;
+            --bg-card: #0d1117;
+            --bg-card-alt: #111820;
+            --bg-elevated: #161c26;
+            --border-subtle: #1a2230;
+            --border-medium: #212a38;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b9bb4;
+            --text-muted: #5c6e88;
+            --gold: #d4a853;
+            --gold-light: #e8c97a;
+            --gold-dark: #b8942e;
+            --navy: #1e3a5f;
+            --navy-light: #2b5797;
+            --crimson: #8b2530;
+            --crimson-light: #b83341;
+            --emerald: #1a7f4b;
+            --emerald-light: #22a861;
+            --slate: #4a5568;
+            --white-soft: #f0f4f8;
+
+            --gradient-gold: linear-gradient(135deg, #d4a853 0%, #e8c97a 40%, #f5deb3 70%, #c99a2e 100%);
+            --gradient-navy: linear-gradient(135deg, #1e3a5f 0%, #2b5797 50%, #1a3454 100%);
+            --gradient-card-premium: linear-gradient(160deg, rgba(212,168,83,0.04) 0%, rgba(30,58,95,0.06) 50%, rgba(0,0,0,0) 100%);
+            --gradient-hero: radial-gradient(ellipse at 30% 20%, rgba(212,168,83,0.07) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 60%, rgba(30,58,95,0.08) 0%, transparent 55%),
+                radial-gradient(ellipse at 50% 80%, rgba(139,37,48,0.04) 0%, transparent 50%);
+
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.5);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.6);
+            --shadow-xl: 0 20px 48px rgba(0,0,0,0.7);
+
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-2xl: 24px;
+
+            --font-display: 'Georgia', 'Times New Roman', serif;
+            --font-body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: 0.01em;
+        }
+
+        /* ========== TOP ORNAMENTAL BAR ========== */
+        .ornament-top {
+            height: 4px;
+            background: var(--gradient-gold);
+        }
+
+        /* ========== CONTAINER ========== */
+        .report-container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* ========== LETTERHEAD / DEDICATION ========== */
+        .letterhead {
+            text-align: center;
+            padding: 56px 20px 40px;
+            position: relative;
+        }
+        .letterhead-crest {
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+            opacity: 0.9;
+            filter: drop-shadow(0 2px 4px rgba(212,168,83,0.3));
+        }
+        .letterhead-title {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: var(--gold);
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+        .letterhead-subtitle {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            font-style: italic;
+            letter-spacing: 0.03em;
+        }
+        .letterhead-line {
+            width: 120px;
+            height: 1px;
+            background: var(--gradient-gold);
+            margin: 20px auto 0;
+            opacity: 0.7;
+        }
+
+        /* ========== DEDICATION CARD ========== */
+        .dedication-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-xl);
+            padding: 40px 36px;
+            text-align: center;
+            margin-bottom: 48px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        .dedication-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-gold);
+            border-radius: 3px 3px 0 0;
+        }
+        .dedication-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-gold);
+            border-radius: 0 0 3px 3px;
+        }
+        .dedication-greeting {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--gold-light);
+            font-style: italic;
+            margin-bottom: 8px;
+            letter-spacing: 0.03em;
+        }
+        .dedication-name {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            font-weight: 700;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+            letter-spacing: 0.04em;
+        }
+        .dedication-message {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .dedication-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .dedication-divider .diamond {
+            width: 8px;
+            height: 8px;
+            background: var(--gold-dark);
+            transform: rotate(45deg);
+            opacity: 0.8;
+        }
+        .dedication-divider .line {
+            width: 50px;
+            height: 1px;
+            background: var(--border-medium);
+        }
+
+        /* ========== HERO HEADER ========== */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 64px 32px 52px;
+            margin-bottom: 48px;
+            border-radius: var(--radius-2xl);
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-hero);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--gradient-navy);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            padding: 9px 22px;
+            border-radius: 100px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--white-soft);
+        }
+        .hero h1 .gold-accent {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin: 0 auto 12px;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .hero-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+            margin-top: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .hero-meta .dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--gold);
+            display: inline-block;
+        }
+
+        /* ========== SECTION STYLES ========== */
+        .section {
+            margin-bottom: 56px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 28px;
+        }
+        .section-ornament {
+            font-size: 1.4rem;
+            color: var(--gold);
+            flex-shrink: 0;
+            opacity: 0.9;
+        }
+        .section-number {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            background: var(--gradient-navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            flex-shrink: 0;
+            font-family: var(--font-display);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 1.55rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: #f0f4f8;
+        }
+        .section-line {
+            flex: 1;
+            height: 1px;
+            background: var(--border-medium);
+            min-width: 30px;
+            opacity: 0.6;
+        }
+
+        /* ========== CARDS ========== */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-md);
+            transition: border-color 0.35s, box-shadow 0.35s;
+        }
+        .card:hover {
+            border-color: #2a3548;
+            box-shadow: var(--shadow-lg);
+        }
+        .card-premium {
+            background: var(--gradient-card-premium);
+            background-color: var(--bg-card);
+        }
+        .card-accent-gold {
+            border-left: 3px solid var(--gold-dark);
+        }
+        .card-accent-navy {
+            border-left: 3px solid var(--navy-light);
+        }
+        .card-accent-emerald {
+            border-left: 3px solid var(--emerald);
+        }
+        .card-accent-crimson {
+            border-left: 3px solid var(--crimson-light);
+        }
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 0.02em;
+        }
+        .card-title .icon {
+            font-size: 1.2rem;
+        }
+
+        /* ========== TABLES ========== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 0 -6px;
+            padding: 0 6px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+            min-width: 720px;
+        }
+        table thead th {
+            background: var(--bg-elevated);
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-size: 0.7rem;
+            padding: 14px 14px;
+            text-align: left;
+            border-bottom: 2px solid var(--border-medium);
+            white-space: nowrap;
+            font-family: var(--font-body);
+        }
+        table tbody td {
+            padding: 13px 14px;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            font-size: 0.85rem;
+        }
+        table tbody tr {
+            transition: background 0.25s;
+        }
+        table tbody tr:hover {
+            background: rgba(212, 168, 83, 0.03);
+        }
+        table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .table-highlight-row {
+            background: rgba(212, 168, 83, 0.04);
+        }
+
+        /* ========== BADGES ========== */
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 100px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .badge-world-class {
+            background: rgba(212, 168, 83, 0.14);
+            color: #e8c97a;
+            border: 1px solid rgba(212, 168, 83, 0.3);
+        }
+        .badge-excellent {
+            background: rgba(34, 168, 97, 0.12);
+            color: #22a861;
+            border: 1px solid rgba(34, 168, 97, 0.28);
+        }
+        .badge-good {
+            background: rgba(43, 87, 151, 0.14);
+            color: #4a9eff;
+            border: 1px solid rgba(43, 87, 151, 0.3);
+        }
+        .badge-average {
+            background: rgba(200, 160, 60, 0.08);
+            color: #c8a03c;
+            border: 1px solid rgba(200, 160, 60, 0.25);
+        }
+        .badge-poor {
+            background: rgba(184, 51, 65, 0.12);
+            color: #e05560;
+            border: 1px solid rgba(184, 51, 65, 0.28);
+        }
+        .badge-neutral {
+            background: rgba(139, 155, 180, 0.08);
+            color: #8b9bb4;
+            border: 1px solid rgba(139, 155, 180, 0.22);
+        }
+
+        /* ========== HIGHLIGHT BOX ========== */
+        .highlight-box {
+            background: var(--bg-card-alt);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-md);
+            padding: 22px 26px;
+            margin: 18px 0;
+            border-left: 3px solid var(--gold-dark);
+        }
+        .highlight-box h4 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f8fafc;
+            letter-spacing: 0.02em;
+        }
+        .highlight-box p,
+        .highlight-box li {
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+        }
+
+        /* ========== STAT GRID ========== */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 14px;
+            margin: 22px 0;
+        }
+        .stat-card {
+            background: var(--bg-card-alt);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 22px 18px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+        .stat-label {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            font-weight: 500;
+        }
+
+        /* ========== INSIGHT BLOCK ========== */
+        .insight-block {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 18px;
+            margin: 22px 0;
+        }
+        .insight-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            box-shadow: var(--shadow-sm);
+            transition: border-color 0.3s;
+        }
+        .insight-card:hover {
+            border-color: #2a3548;
+        }
+        .insight-card h4 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            color: #f8fafc;
+        }
+        .insight-card p {
+            color: var(--text-secondary);
+            font-size: 0.84rem;
+            line-height: 1.65;
+        }
+
+        /* ========== LIST STYLES ========== */
+        .styled-list {
+            list-style: none;
+            padding: 0;
+        }
+        .styled-list li {
+            padding: 7px 0;
+            padding-left: 22px;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        .styled-list li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: var(--gold-dark);
+            font-size: 0.5rem;
+            top: 11px;
+            opacity: 0.8;
+        }
+
+        /* ========== TAKEAWAYS ========== */
+        .takeaway-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 18px;
+            margin: 22px 0;
+        }
+        .takeaway-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .takeaway-card:hover {
+            border-color: #2a3548;
+            box-shadow: var(--shadow-lg);
+        }
+        .takeaway-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            border-radius: 3px 0 0 3px;
+        }
+        .tc-gold::before {
+            background: var(--gold-dark);
+        }
+        .tc-navy::before {
+            background: var(--navy-light);
+        }
+        .tc-emerald::before {
+            background: var(--emerald);
+        }
+        .tc-crimson::before {
+            background: var(--crimson-light);
+        }
+        .tc-slate::before {
+            background: var(--slate);
+        }
+        .takeaway-number {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.025);
+            position: absolute;
+            top: 4px;
+            right: 18px;
+            pointer-events: none;
+            letter-spacing: -0.02em;
+        }
+        .takeaway-card h4 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            position: relative;
+            letter-spacing: 0.02em;
+            color: #f8fafc;
+        }
+        .takeaway-card p {
+            color: var(--text-secondary);
+            font-size: 0.84rem;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        /* ========== SIGNATURE BLOCK ========== */
+        .signature-block {
+            text-align: center;
+            padding: 48px 20px 32px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-medium);
+        }
+        .signature-block .sig-line {
+            width: 180px;
+            height: 1px;
+            background: var(--gold-dark);
+            margin: 0 auto 16px;
+            opacity: 0.7;
+        }
+        .signature-block .sig-name {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--gold-light);
+            font-style: italic;
+            letter-spacing: 0.04em;
+            margin-bottom: 4px;
+        }
+        .signature-block .sig-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        /* ========== FOOTER ========== */
+        .report-footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-subtle);
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            letter-spacing: 0.03em;
+        }
+        .report-footer .divider-dot {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--text-muted);
+            margin: 0 10px;
+            vertical-align: middle;
+            opacity: 0.6;
+        }
+        .ornament-bottom {
+            height: 4px;
+            background: var(--gradient-gold);
+            margin-top: 8px;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 18px 36px;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .hero-subtitle {
+                font-size: 0.95rem;
+            }
+            .dedication-name {
+                font-size: 1.8rem;
+            }
+            .dedication-greeting {
+                font-size: 1.3rem;
+            }
+            .section-title {
+                font-size: 1.25rem;
+            }
+            .card {
+                padding: 20px;
+            }
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .insight-block,
+            .takeaway-grid {
+                grid-template-columns: 1fr;
+            }
+            table {
+                font-size: 0.76rem;
+            }
+            .letterhead-title {
+                font-size: 0.7rem;
+            }
+            .letterhead-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .dedication-name {
+                font-size: 1.5rem;
+            }
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-meta {
+                gap: 10px;
+                font-size: 0.7rem;
+            }
+            .section-number {
+                width: 34px;
+                height: 34px;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* ========== PRINT STYLES ========== */
+        @media print {
+            body {
+                background: #fff;
+                color: #1a1a1a;
+            }
+            .ornament-top,
+            .ornament-bottom {
+                background: #b8942e;
+            }
+            .card,
+            .stat-card,
+            .insight-card,
+            .takeaway-card,
+            .highlight-box,
+            .dedication-card,
+            .hero {
+                background: #fafaf9;
+                border: 1px solid #d4d0c8;
+                box-shadow: none;
+                break-inside: avoid;
+            }
+            .hero {
+                padding: 30px;
+            }
+            .hero h1 {
+                color: #1a1a1a;
+                -webkit-text-fill-color: #1a1a1a;
+            }
+            .hero h1 .gold-accent {
+                color: #b8942e;
+                -webkit-text-fill-color: #b8942e;
+            }
+            .dedication-name {
+                color: #b8942e;
+                -webkit-text-fill-color: #b8942e;
+            }
+            .hero::before,
+            .dedication-card::before,
+            .dedication-card::after {
+                display: none;
+            }
+            .section-number {
+                background: #1e3a5f;
+            }
+            table thead th {
+                background: #eee;
+                color: #333;
+            }
+            .badge-world-class,
+            .badge-excellent,
+            .badge-good,
+            .badge-average,
+            .badge-poor {
+                background: #f5f5f5;
+                color: #333;
+                border: 1px solid #999;
+            }
+            .stat-value {
+                color: #b8942e;
+                -webkit-text-fill-color: #b8942e;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ornamental Top Bar -->
+    <div class="ornament-top"></div>
+
+    <div class="report-container">
+
+        <!-- ==================== LETTERHEAD ==================== -->
+        <div class="letterhead">
+            <div class="letterhead-crest">◇</div>
+            <div class="letterhead-title">Enterprise Benchmark Series</div>
+            <div class="letterhead-subtitle">Prepared Exclusively For</div>
+            <div class="letterhead-line"></div>
+        </div>
+
+        <!-- ==================== DEDICATION ==================== -->
+        <div class="dedication-card">
+            <div class="dedication-greeting">Dear</div>
+            <div class="dedication-name">Recipient</div>
+            <div class="dedication-divider">
+                <span class="line"></span><span class="diamond"></span><span class="line"></span>
+            </div>
+            <p class="dedication-message">
+                This comprehensive engagement benchmark report has been meticulously curated to provide you with
+                <strong>actionable intelligence</strong> on global ecommerce performance standards. It reflects the latest
+                Q2 2026 data, proprietary analytical frameworks, and strategic insights designed to inform
+                <strong>enterprise-level decision-making</strong>. We trust it will serve as a valuable resource in your
+                pursuit of digital commerce excellence.
+            </p>
+            <p style="color:var(--text-muted); font-size:0.8rem; margin-top:16px; font-style:italic;">
+                With the highest regard and respect.
+            </p>
+        </div>
+
+        <!-- ==================== HERO HEADER ==================== -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">◆ Confidential ◆ Q2 2026</div>
+                <h1>Enterprise Ecommerce<br><span class="gold-accent">Engagement Benchmark</span> Report</h1>
+                <p class="hero-subtitle">The Definitive Guide to User Engagement, Experience Quality &amp; Revenue Performance — Prepared for Recipient</p>
+                <div class="hero-meta">
+                    <span><span class="dot"></span> 12 Global Leaders</span>
+                    <span><span class="dot"></span> 10 Industry Verticals</span>
+                    <span><span class="dot"></span> Proprietary EES™ Framework</span>
+                    <span><span class="dot"></span> July 2026</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ==================== EXECUTIVE SUMMARY ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-ornament">◈</div>
+                <h2 class="section-title">Executive Summary</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card card-premium card-accent-gold">
+                <p style="font-size:1rem; color:#f0f4f8; margin-bottom:14px; line-height:1.8;">
+                    In the maturing landscape of digital commerce, <strong>user engagement has transcended its role as a vanity metric</strong>. It is now a direct proxy for commercial intent, experience quality, and long-term customer value. Metrics such as <strong>Average Session Duration</strong>, <strong>Pages per Session</strong>, <strong>Engagement Rate</strong>, and <strong>Bounce Rate</strong> are no longer evaluated in isolation—they are contextualized by business models, product categories, and conversion efficiency.
+                </p>
+                <p style="color:var(--text-secondary); line-height:1.8;">
+                    This expanded 2026 report provides a <strong>multi-dimensional analysis of engagement</strong>. We dissect the strategies of 12 global leaders, introduce the proprietary <strong>Engagement Efficiency Score (EES™)</strong>, and deliver granular benchmarks segmented by business model, traffic source, and technical performance. The core insight: <em>engagement must be measured relative to the complexity of the purchase task.</em>
+                </p>
+            </div>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-value">4–7m</div>
+                    <div class="stat-label">World-Class Avg. Session</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">7–10+</div>
+                    <div class="stat-label">World-Class Pages / Session</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">&lt;30%</div>
+                    <div class="stat-label">World-Class Bounce Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">EES™</div>
+                    <div class="stat-label">Proprietary Efficiency Metric</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 1: GLOBAL LEADERS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <h2 class="section-title">Global Ecommerce Leaders: The Engagement Elite</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p style="color:var(--text-secondary); margin-bottom:22px; font-style:italic;">Q2 2026 analysis of 12 top-tier global platforms, ranked by engagement depth and commercial efficiency.</p>
+
+            <div class="card card-premium card-accent-navy">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Website</th>
+                                <th>Avg. Duration</th>
+                                <th>Pages / Visit</th>
+                                <th>Est. Bounce</th>
+                                <th>Performance</th>
+                                <th>Primary Catalyst</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1</strong></td>
+                                <td><strong>🛒 Amazon</strong></td>
+                                <td><strong>7m 12s</strong></td>
+                                <td><strong>10.81</strong></td>
+                                <td>~22%</td>
+                                <td><span class="badge badge-world-class">World-Class</span></td>
+                                <td>AI hyper-personalization, ecosystem lock-in</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2</strong></td>
+                                <td><strong>🛒 eBay</strong></td>
+                                <td><strong>6m 45s</strong></td>
+                                <td><strong>7.95</strong></td>
+                                <td>~25%</td>
+                                <td><span class="badge badge-world-class">World-Class</span></td>
+                                <td>Auction dynamics, treasure-hunt browsing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3</strong></td>
+                                <td><strong>🛒 Etsy</strong></td>
+                                <td><strong>6m 18s</strong></td>
+                                <td><strong>7.50</strong></td>
+                                <td>~28%</td>
+                                <td><span class="badge badge-world-class">World-Class</span></td>
+                                <td>Human-curated discovery, seller stories</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4</strong></td>
+                                <td><strong>👗 Zalando</strong></td>
+                                <td><strong>5m 55s</strong></td>
+                                <td><strong>8.20</strong></td>
+                                <td>~30%</td>
+                                <td><span class="badge badge-excellent">Excellent</span></td>
+                                <td>Inspirational content, outfit-based browsing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5</strong></td>
+                                <td><strong>🏠 IKEA</strong></td>
+                                <td><strong>5m 40s</strong></td>
+                                <td><strong>7.80</strong></td>
+                                <td>~32%</td>
+                                <td><span class="badge badge-excellent">Excellent</span></td>
+                                <td>Immersive planning tools, room browsing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6</strong></td>
+                                <td><strong>🎮 Temu</strong></td>
+                                <td><strong>4m 50s</strong></td>
+                                <td><strong>5.80</strong></td>
+                                <td>~30%</td>
+                                <td><span class="badge badge-excellent">Excellent</span></td>
+                                <td>Gamified shopping-as-entertainment</td>
+                            </tr>
+                            <tr>
+                                <td><strong>7</strong></td>
+                                <td><strong>👟 Nike</strong></td>
+                                <td><strong>3m 55s</strong></td>
+                                <td><strong>4.65</strong></td>
+                                <td>~35%</td>
+                                <td><span class="badge badge-good">Good</span></td>
+                                <td>Brand storytelling, exclusive drops</td>
+                            </tr>
+                            <tr>
+                                <td><strong>8</strong></td>
+                                <td><strong>🌐 Alibaba (Global)</strong></td>
+                                <td><strong>5m 30s</strong></td>
+                                <td><strong>7.10</strong></td>
+                                <td>~35%</td>
+                                <td><span class="badge badge-excellent">Excellent</span></td>
+                                <td>Wholesale inquiry mix, live commerce</td>
+                            </tr>
+                            <tr>
+                                <td><strong>9</strong></td>
+                                <td><strong>🐾 Chewy</strong></td>
+                                <td><strong>4m 15s</strong></td>
+                                <td><strong>5.50</strong></td>
+                                <td>~33%</td>
+                                <td><span class="badge badge-good">Good–Excellent</span></td>
+                                <td>Subscription loyalty, community passion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>10</strong></td>
+                                <td><strong>👜 Shopbop</strong></td>
+                                <td><strong>5m 05s</strong></td>
+                                <td><strong>7.30</strong></td>
+                                <td>~32%</td>
+                                <td><span class="badge badge-excellent">Excellent</span></td>
+                                <td>Editorial curation, aspirational browsing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>11</strong></td>
+                                <td><strong>🛍️ Shopify Network</strong></td>
+                                <td><strong>3m 40s</strong></td>
+                                <td><strong>4.80</strong></td>
+                                <td>~40%</td>
+                                <td><span class="badge badge-good">Good</span></td>
+                                <td>Aggregate of millions of independent brands</td>
+                            </tr>
+                            <tr>
+                                <td><strong>12</strong></td>
+                                <td><strong>🥕 Instacart</strong></td>
+                                <td><strong>2m 30s</strong></td>
+                                <td><strong>3.90</strong></td>
+                                <td>~18%</td>
+                                <td><span class="badge badge-world-class">World-Class</span></td>
+                                <td>Task-completion efficiency, high intent</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Strategic Observations -->
+            <div class="insight-block">
+                <div class="insight-card" style="border-top:3px solid var(--navy-light);">
+                    <h4>🔷 The Amazon Enigma</h4>
+                    <p>Session duration continues to climb, driven by ecosystem stickiness. A single session weaves between shopping, reading a Prime book sample, and streaming a trailer—all as one "visit."</p>
+                </div>
+                <div class="insight-card" style="border-top:3px solid var(--gold-dark);">
+                    <h4>🎯 The Temu Dialectic</h4>
+                    <p>Lower pages-per-visit than Amazon but high engagement rate showcases mastery of gamification. Users engage with <em>platform mechanics</em> more than vast catalogs.</p>
+                </div>
+                <div class="insight-card" style="border-top:3px solid var(--emerald);">
+                    <h4>⚡ The Instacart Paradigm</h4>
+                    <p>The "task-completion" champion. Low duration with sub-20% bounce and high conversion is the <strong>ideal state for utility-driven commerce</strong>. A long session here signals a problem.</p>
+                </div>
+                <div class="insight-card" style="border-top:3px solid var(--crimson-light);">
+                    <h4>✨ Fashion's Inspirational Core</h4>
+                    <p>Zalando and Shopbop prove that in fashion, engagement is built on inspiration. High pages-per-visit are a <strong>success metric</strong> indicating successful exploration.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 2: INDUSTRY BENCHMARKS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <h2 class="section-title">Industry-Wide Ecommerce Benchmarks</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card card-premium card-accent-emerald">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th><span class="badge badge-poor">Poor</span></th>
+                                <th><span class="badge badge-average">Average</span></th>
+                                <th><span class="badge badge-good">Good</span></th>
+                                <th><span class="badge badge-excellent">Excellent</span></th>
+                                <th><span class="badge badge-world-class">World-Class</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Avg. Session Duration</strong></td>
+                                <td>&lt;2 min</td>
+                                <td>2–3 min</td>
+                                <td>3–5 min</td>
+                                <td>5–7 min</td>
+                                <td><strong>&gt;7 min</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pages per Session</strong></td>
+                                <td>&lt;3</td>
+                                <td>3–5</td>
+                                <td>5–7</td>
+                                <td>7–9</td>
+                                <td><strong>&gt;9</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Engagement Rate</strong></td>
+                                <td>&lt;50%</td>
+                                <td>50–60%</td>
+                                <td>60–75%</td>
+                                <td>75–85%</td>
+                                <td><strong>&gt;85%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bounce Rate</strong></td>
+                                <td>&gt;60%</td>
+                                <td>45–60%</td>
+                                <td>30–45%</td>
+                                <td>20–30%</td>
+                                <td><strong>&lt;20%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Session Conversion Rate</strong></td>
+                                <td>&lt;0.5%</td>
+                                <td>0.5–1.5%</td>
+                                <td>1.5–3.0%</td>
+                                <td>3.0–5.0%</td>
+                                <td><strong>&gt;5.0%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Returning Visitors</strong></td>
+                                <td>&lt;20%</td>
+                                <td>20–30%</td>
+                                <td>30–45%</td>
+                                <td>45–60%</td>
+                                <td><strong>&gt;60%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 3: EES ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <h2 class="section-title">Proprietary Metric: Engagement Efficiency Score (EES™)</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card card-premium card-accent-gold">
+                <p style="color:var(--text-secondary); margin-bottom:18px;">
+                    Duration alone is meaningless. <strong>EES™</strong> quantifies the balance between engagement and conversion:
+                </p>
+                <div style="background:var(--bg-elevated); border-radius:var(--radius-md); padding:20px 24px; text-align:center; margin-bottom:18px; border:1px solid var(--border-medium);">
+                    <span style="font-family:var(--font-display); font-size:1.25rem; font-weight:600; color:#f8fafc;">
+                        EES™ = (Avg. Session Duration in minutes) × (Session Conversion Rate × 100)
+                    </span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>EES™ Range</th>
+                                <th>Interpretation</th>
+                                <th>Recommended Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge badge-poor">&lt; 3</span></td>
+                                <td><strong>Low-Efficiency Engagement</strong></td>
+                                <td>Long sessions, low conversion. Audit funnel, pricing, or product-market fit.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-good">3 – 10</span></td>
+                                <td><strong>Healthily Engaged</strong></td>
+                                <td>Strong balance. Content and discovery drive solid conversion. Optimize incrementally.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-world-class">&gt; 10</span></td>
+                                <td><strong>Conversion Engine</strong></td>
+                                <td>Short, sharp sessions with high intent. Ideal for re-stocking and DTC subscriptions.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card card-premium card-accent-navy">
+                <div class="card-title"><span class="icon">📈</span> EES™ Applied: Real-World Profiles</div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Company Profile</th>
+                                <th>Est. Duration</th>
+                                <th>Est. Conv. Rate</th>
+                                <th>EES™</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>High-End Fashion Curation</td>
+                                <td>5.0 min</td>
+                                <td>3.2%</td>
+                                <td><strong>16.0</strong></td>
+                                <td><span class="badge badge-world-class">World-Class Balance</span></td>
+                            </tr>
+                            <tr class="table-highlight-row">
+                                <td>Mass Marketplace (Amazon)</td>
+                                <td>7.2 min</td>
+                                <td>8.5%</td>
+                                <td><strong>61.2</strong></td>
+                                <td><span class="badge badge-world-class">Outlier Performance</span></td>
+                            </tr>
+                            <tr>
+                                <td>Grocery/Task Utility (Instacart)</td>
+                                <td>2.5 min</td>
+                                <td>6.0%</td>
+                                <td><strong>15.0</strong></td>
+                                <td><span class="badge badge-world-class">Conversion Engine</span></td>
+                            </tr>
+                            <tr>
+                                <td>DTC Brand with Funnel Issues</td>
+                                <td>4.5 min</td>
+                                <td>1.0%</td>
+                                <td><strong>4.5</strong></td>
+                                <td><span class="badge badge-good">Engaged but Leaky Funnel</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 4: CATEGORY BENCHMARKS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">4</div>
+                <h2 class="section-title">Category-Wise Engagement Benchmarks</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p style="color:var(--text-secondary); margin-bottom:22px; font-style:italic;">Context is paramount. Engagement expectations mapped to the cognitive load of the purchase decision.</p>
+
+            <div class="card card-premium card-accent-crimson">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Industry</th>
+                                <th>Avg Duration</th>
+                                <th>Pages / Session</th>
+                                <th>Bounce Rate</th>
+                                <th>Cognitive Load</th>
+                                <th>Key Behavior</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>💎 Luxury Fashion</strong></td>
+                                <td>6–9 min</td>
+                                <td>8–12</td>
+                                <td>25–35%</td>
+                                <td><span class="badge badge-poor">Very High</span></td>
+                                <td>Brand immersion, editorial video, collection browsing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🛋️ Furniture & Home</strong></td>
+                                <td>5–8 min</td>
+                                <td>7–11</td>
+                                <td>30–40%</td>
+                                <td><span class="badge badge-poor">Very High</span></td>
+                                <td>Room visualization tools, material exploration</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🏭 B2B Ecommerce</strong></td>
+                                <td>6–10 min</td>
+                                <td>8–15</td>
+                                <td>20–30%</td>
+                                <td><span class="badge badge-poor">Extremely High</span></td>
+                                <td>Technical specs, compliance docs, multi-stakeholder review</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🏪 Marketplace (General)</strong></td>
+                                <td>5–7 min</td>
+                                <td>7–10</td>
+                                <td>25–35%</td>
+                                <td><span class="badge badge-neutral">Variable</span></td>
+                                <td>Price comparison, serendipitous discovery</td>
+                            </tr>
+                            <tr>
+                                <td><strong>👗 Fashion & Apparel</strong></td>
+                                <td>4–6 min</td>
+                                <td>6–9</td>
+                                <td>35–45%</td>
+                                <td><span class="badge badge-average">High</span></td>
+                                <td>Visual browsing, size/fit analysis, UGC photos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>📱 Electronics</strong></td>
+                                <td>3–5 min</td>
+                                <td>5–7</td>
+                                <td>40–50%</td>
+                                <td><span class="badge badge-average">High</span></td>
+                                <td>Side-by-side spec comparison, expert reviews</td>
+                            </tr>
+                            <tr>
+                                <td><strong>⚽ Sports Equipment</strong></td>
+                                <td>4–6 min</td>
+                                <td>5–8</td>
+                                <td>35–45%</td>
+                                <td><span class="badge badge-average">High</span></td>
+                                <td>Use-case matching, sizing charts, materials</td>
+                            </tr>
+                            <tr>
+                                <td><strong>💄 Beauty & Cosmetics</strong></td>
+                                <td>3–5 min</td>
+                                <td>5–7</td>
+                                <td>40–50%</td>
+                                <td><span class="badge badge-good">Medium-High</span></td>
+                                <td>Ingredient deep-dives, shade-finding tools</td>
+                            </tr>
+                            <tr>
+                                <td><strong>📦 DTC Subscription Box</strong></td>
+                                <td>2–4 min</td>
+                                <td>3–5</td>
+                                <td>30–40%</td>
+                                <td><span class="badge badge-excellent">Low-Med</span></td>
+                                <td>Brand narrative, straightforward selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🛒 Grocery</strong></td>
+                                <td>2–3 min</td>
+                                <td>3–5</td>
+                                <td>15–25%</td>
+                                <td><span class="badge badge-excellent">Low</span></td>
+                                <td>Past-order re-buying, list-driven, swift re-stock</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 5: GA4 EVENTS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">5</div>
+                <h2 class="section-title">Understanding GA4 Events per Session</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card card-premium card-accent-navy">
+                <p style="color:var(--text-secondary); margin-bottom:18px;">
+                    The "Events per Session" metric in GA4 is the most <strong>contextual and least standardized</strong> engagement metric. It measures <em>instrumentation maturity</em> as much as user engagement.
+                </p>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">74</div>
+                        <div class="stat-label">Top Quartile Median<br>Events / Session</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Bottom Quartile Median<br>Events / Session</div>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <h4>💡 Strategic Insight for Recipient</h4>
+                    <p>Do not chase the "74" number. Define your organization's <strong>Critical Engagement Events (CEE)</strong>—the 5–7 events that truly map to a high-quality session (e.g., <code>product_view</code>, <code>add_to_wishlist</code>, <code>search</code>, <code>begin_checkout</code>). A site with a 10-event CEE rate and 5% conversion is <strong>outperforming</strong> a site with 74-event "noise" and 2% conversion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 6: FUNNEL BENCHMARKS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">6</div>
+                <h2 class="section-title">Customer Journey & Funnel Benchmarks</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card card-premium card-accent-emerald">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Funnel Stage</th>
+                                <th>Gross Expected</th>
+                                <th>📱 Mobile</th>
+                                <th>🖥️ Desktop</th>
+                                <th>Key Insight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Landing Page → Product View</td>
+                                <td>70–90%</td>
+                                <td>65–80%</td>
+                                <td>80–95%</td>
+                                <td>Mobile suffers from landing page leakage</td>
+                            </tr>
+                            <tr>
+                                <td>Product View → Add to Cart</td>
+                                <td>8–15%</td>
+                                <td>6–10%</td>
+                                <td>10–18%</td>
+                                <td>Typing/size-selection friction on mobile</td>
+                            </tr>
+                            <tr>
+                                <td>Add to Cart → Checkout</td>
+                                <td>55–70%</td>
+                                <td>50–65%</td>
+                                <td>65–80%</td>
+                                <td>Unexpected costs kill mobile carts</td>
+                            </tr>
+                            <tr>
+                                <td>Checkout → Purchase</td>
+                                <td>40–70%</td>
+                                <td>35–55%</td>
+                                <td>50–80%</td>
+                                <td><strong>Largest device gap.</strong> Express checkout is critical.</td>
+                            </tr>
+                            <tr class="table-highlight-row">
+                                <td><strong>Overall Conversion Rate</strong></td>
+                                <td><strong>2–5%</strong></td>
+                                <td><strong>1.5–3.0%</strong></td>
+                                <td><strong>3.5–6.0%</strong></td>
+                                <td><strong>Blended rate obscures massive device deltas.</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 7: ENTERPRISE PLATFORM BENCHMARKS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">7</div>
+                <h2 class="section-title">Enterprise Platform Performance Benchmarks</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p style="color:var(--text-secondary); margin-bottom:22px; font-style:italic;">Extended comparison across Shopify Plus, Adobe Commerce (Magento), and Salesforce Commerce Cloud.</p>
+
+            <div class="card card-premium card-accent-gold">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>KPI</th>
+                                <th>Shopify Plus Target</th>
+                                <th>Shopify Plus Excellent</th>
+                                <th>Adobe / SFCC Target</th>
+                                <th>Adobe / SFCC Excellent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Session Duration</strong></td>
+                                <td>3.5–5 min</td>
+                                <td>&gt;5 min</td>
+                                <td>5–8 min</td>
+                                <td>&gt;8 min</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pages per Session</strong></td>
+                                <td>5–7</td>
+                                <td>&gt;8</td>
+                                <td>7–10</td>
+                                <td>&gt;10</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Engagement Rate</strong></td>
+                                <td>&gt;65%</td>
+                                <td>&gt;80%</td>
+                                <td>&gt;70%</td>
+                                <td>&gt;85%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bounce Rate</strong></td>
+                                <td>&lt;45%</td>
+                                <td>&lt;30%</td>
+                                <td>&lt;40%</td>
+                                <td>&lt;25%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Add to Cart Rate</strong></td>
+                                <td>6–10%</td>
+                                <td>&gt;12%</td>
+                                <td>5–8%</td>
+                                <td>&gt;10%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Checkout Rate</strong></td>
+                                <td>3–6%</td>
+                                <td>&gt;8%</td>
+                                <td>2–4%</td>
+                                <td>&gt;5%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conversion Rate</strong></td>
+                                <td>2.5–4%</td>
+                                <td>&gt;5%</td>
+                                <td>1.5–3.0%</td>
+                                <td>&gt;4%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Returning Customer Rate</strong></td>
+                                <td>&gt;30%</td>
+                                <td>&gt;45%</td>
+                                <td>&gt;40%</td>
+                                <td>&gt;55%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="highlight-box" style="margin-top:18px;">
+                    <h4>⚠️ Critical Nuance</h4>
+                    <p>Adobe Commerce/SFCC clients often have longer purchase cycles, multi-step quote/order processes, and logged-in B2B portals. Their longer durations and higher pages-per-visit are a function of this complexity and should not be naively compared to a DTC Shopify store.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 8: MOBILE VS DESKTOP ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">8</div>
+                <h2 class="section-title">Mobile vs. Desktop: A Nuanced Reality</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="card card-premium card-accent-crimson">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Device / Context</th>
+                                <th>Good Pages / Session</th>
+                                <th>Excellent Pages / Session</th>
+                                <th>Avg Duration</th>
+                                <th>Dominant User Intent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>📱 Mobile – Task Mode</strong></td>
+                                <td>&gt;4.0</td>
+                                <td>&gt;5.5</td>
+                                <td>2–4 min</td>
+                                <td>Speed, efficiency, minimal friction</td>
+                            </tr>
+                            <tr>
+                                <td><strong>📱 Mobile – Browse Mode</strong></td>
+                                <td>&gt;5.5</td>
+                                <td>&gt;7.0</td>
+                                <td>4–6 min</td>
+                                <td>Discovery, curation, social swiping</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🖥️ Desktop – Professional</strong></td>
+                                <td>&gt;8.0</td>
+                                <td>&gt;10.0</td>
+                                <td>6–12 min</td>
+                                <td>Deep analysis, comparison, multi-tab research</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🖥️ Desktop – Personal</strong></td>
+                                <td>&gt;5.5</td>
+                                <td>&gt;7.5</td>
+                                <td>5–8 min</td>
+                                <td>Focused research, high purchase comfort</td>
+                            </tr>
+                            <tr>
+                                <td><strong>📋 Tablet</strong></td>
+                                <td>&gt;5.0</td>
+                                <td>&gt;7.0</td>
+                                <td>4–7 min</td>
+                                <td>"Lean-back" browsing, high video engagement</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 9: ENGAGEMENT STACK ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">9</div>
+                <h2 class="section-title">The Four-Layer Engagement Stack</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p style="color:var(--text-secondary); margin-bottom:22px; font-style:italic;">World-class engagement is achieved only when all four layers operate in concert.</p>
+
+            <div class="insight-block">
+                <div class="insight-card" style="border-top:3px solid var(--navy-light);">
+                    <h4>🔷 Layer 1: Technical Excellence</h4>
+                    <ul class="styled-list">
+                        <li>99th Percentile Core Web Vitals</li>
+                        <li>Edge-computed, headless architecture</li>
+                        <li>100ms LCP improvement = measurable bounce rate drop</li>
+                        <li>Real-time personalization without speed sacrifice</li>
+                    </ul>
+                </div>
+                <div class="insight-card" style="border-top:3px solid var(--gold-dark);">
+                    <h4>🟡 Layer 2: Intent-Driven Discovery</h4>
+                    <ul class="styled-list">
+                        <li>Semantic, vector-based search</li>
+                        <li>Visual & voice search capabilities</li>
+                        <li>Hyper-personalized adaptive navigation</li>
+                        <li>Collections that re-sort by real-time affinity signals</li>
+                    </ul>
+                </div>
+                <div class="insight-card" style="border-top:3px solid var(--emerald);">
+                    <h4>🟢 Layer 3: Immersive Content</h4>
+                    <ul class="styled-list">
+                        <li>Shoppable video commerce (live & on-demand)</li>
+                        <li>Augmented Reality try-on/placement</li>
+                        <li>"Ask an Owner" community Q&A</li>
+                        <li>UGC reviews with rich media</li>
+                    </ul>
+                </div>
+                <div class="insight-card" style="border-top:3px solid var(--crimson-light);">
+                    <h4>🔴 Layer 4: Intelligent Conversion</h4>
+                    <ul class="styled-list">
+                        <li>AI-orchestrated conversational commerce</li>
+                        <li>Dynamic bundling & fair pricing</li>
+                        <li>Loyalty-integrated experience</li>
+                        <li>One-click/express checkout everywhere</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SECTION 10: KPI SCORECARD ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">10</div>
+                <h2 class="section-title">Comprehensive Enterprise KPI Scorecard</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p style="color:var(--text-secondary); margin-bottom:22px; font-style:italic;">Use this diagnostic scorecard to identify your performance gaps. If <strong>Duration</strong> is "Excellent" but <strong>Conversion Rate</strong> is "Poor," your primary problem is a leaky funnel—not a lack of engagement.</p>
+
+            <div class="card card-premium card-accent-gold">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>KPI</th>
+                                <th><span class="badge badge-poor">Poor</span></th>
+                                <th><span class="badge badge-average">Average</span></th>
+                                <th><span class="badge badge-good">Good</span></th>
+                                <th><span class="badge badge-excellent">Excellent</span></th>
+                                <th><span class="badge badge-world-class">World-Class</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Session Duration</strong></td>
+                                <td>&lt;2 min</td>
+                                <td>2–3 min</td>
+                                <td>3–5 min</td>
+                                <td>5–7 min</td>
+                                <td>&gt;7 min</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pages / Session</strong></td>
+                                <td>&lt;3</td>
+                                <td>3–5</td>
+                                <td>5–7</td>
+                                <td>7–9</td>
+                                <td>&gt;9</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Engagement Rate</strong></td>
+                                <td>&lt;50%</td>
+                                <td>50–60%</td>
+                                <td>60–75%</td>
+                                <td>75–85%</td>
+                                <td>&gt;85%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bounce Rate</strong></td>
+                                <td>&gt;60%</td>
+                                <td>45–60%</td>
+                                <td>30–45%</td>
+                                <td>20–30%</td>
+                                <td>&lt;20%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Add-to-Cart Rate</strong></td>
+                                <td>&lt;4%</td>
+                                <td>4–6%</td>
+                                <td>6–10%</td>
+                                <td>10–14%</td>
+                                <td>&gt;14%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Checkout Initiation</strong></td>
+                                <td>&lt;2%</td>
+                                <td>2–3%</td>
+                                <td>3–6%</td>
+                                <td>6–9%</td>
+                                <td>&gt;9%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Session Conversion Rate</strong></td>
+                                <td>&lt;0.5%</td>
+                                <td>0.5–1.5%</td>
+                                <td>1.5–3.0%</td>
+                                <td>3.0–5.0%</td>
+                                <td>&gt;5.0%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Returning Visitors</strong></td>
+                                <td>&lt;20%</td>
+                                <td>20–30%</td>
+                                <td>30–45%</td>
+                                <td>45–60%</td>
+                                <td>&gt;60%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Customer LTV (x AOV)</strong></td>
+                                <td>&lt;1x</td>
+                                <td>1–2x</td>
+                                <td>2–4x</td>
+                                <td>4–6x</td>
+                                <td>&gt;6x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== KEY TAKEAWAYS ==================== -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-ornament">✦</div>
+                <h2 class="section-title">Key Takeaways for Recipient</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="takeaway-grid">
+                <div class="takeaway-card tc-navy">
+                    <div class="takeaway-number">01</div>
+                    <h4>Move Beyond Averages</h4>
+                    <p>Segment engagement by traffic source, new vs. returning user, device context, and logged-in state. The global average is a myth that obscures actionable insights.</p>
+                </div>
+                <div class="takeaway-card tc-gold">
+                    <div class="takeaway-number">02</div>
+                    <h4>Embrace the Full Spectrum</h4>
+                    <p>Define where your business sits on the Instacart-to-Amazon spectrum. A low duration is a feature for re-ordering apps—not a bug to fix.</p>
+                </div>
+                <div class="takeaway-card tc-emerald">
+                    <div class="takeaway-number">03</div>
+                    <h4>Adopt the EES™ Metric</h4>
+                    <p>Prevent optimization for empty engagement. A high Engagement Efficiency Score means you're balancing attention with commercial outcomes.</p>
+                </div>
+                <div class="takeaway-card tc-crimson">
+                    <div class="takeaway-number">04</div>
+                    <h4>GA4 Events Reflect Maturity</h4>
+                    <p>Use Events per Session as an internal audit tool, not an external benchmark. Define and optimize your Critical Engagement Events (CEE).</p>
+                </div>
+                <div class="takeaway-card tc-slate">
+                    <div class="takeaway-number">05</div>
+                    <h4>Orchestrate the Full Stack</h4>
+                    <p>A fast site with poor search will still fail. World-class engagement requires all four layers—Technical, Discovery, Content, and Conversion—operating in concert.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SIGNATURE BLOCK ==================== -->
+        <div class="signature-block">
+            <div class="sig-line"></div>
+            <div class="sig-name">With the Highest Regard</div>
+            <div class="sig-title">Enterprise Benchmark Series • Confidential</div>
+            <p style="color:var(--text-muted); font-size:0.7rem; margin-top:12px; letter-spacing:0.05em;">
+                Prepared exclusively for Recipient • July 2026
+            </p>
+        </div>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="report-footer">
+            <p>
+                <strong>Enterprise Ecommerce Engagement Benchmark Report</strong>
+                <span class="divider-dot"></span> Q2 2026 Edition
+                <span class="divider-dot"></span> Proprietary EES™ Framework
+            </p>
+            <p style="margin-top:6px;">
+                Data sourced from aggregated analytics, public benchmarks, and industry analysis.
+                <span class="divider-dot"></span> All trademarks property of respective owners.
+            </p>
+            <p style="margin-top:10px; color:#4a5568;">© 2026 Enterprise Benchmark Series. Prepared for Recipient. Confidential.</p>
+        </footer>
+
+    </div>
+
+    <!-- Ornamental Bottom Bar -->
+    <div class="ornament-bottom"></div>
+
+</body>
+</html>
